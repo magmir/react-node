@@ -1,8 +1,8 @@
 // file to figure out what set of credentials to return
-// this will be used only in backend!
+// this will be used only on backend!
 
 
-// env.node_env === production -> this happens automaticaly on heroku
+// env.node_env === production -> this happens automatically on heroku
 if (process.env.NODE_ENV === 'production') {
   module.exports = require('./prod');
 } else {
@@ -14,5 +14,5 @@ if (process.env.NODE_ENV === 'production') {
 
 // FOR CLIENT:
 // we need to add .env files, because when we will use the config
-// file in clien by using impoer, the whole file
+// file in client by using import, the whole file
 // would be visible
